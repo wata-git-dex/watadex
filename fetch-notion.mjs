@@ -125,14 +125,17 @@ const Js = watamonPages
 const pA = practicesPages
   .filter(p => txt(p, "Name"))
   .map((p, i) => ({
-    id:           i + 1,
-    name:         txt(p, "Name"),
-    practiceType: sel(p, "Practice Type"),
-    hwtsStage:    sel(p, "HWTS Stage"),
-    desc:         rtxt(p, "Description"),
-    simple:       rtxt(p, "Simple Explanation"),
-    wash:         rtxt(p, "WASH Concept"),
-    why:          rtxt(p, "Why It Matters"),
+    id:            i + 1,
+    name:          txt(p, "Name"),
+    practiceType:  sel(p, "Practice Type"),
+    hwtsStage:     sel(p, "HWTS Stage"),
+    desc:          rtxt(p, "Description"),
+    simple:        rtxt(p, "Simple Explanation"),
+    wash:          rtxt(p, "WASH Concept"),
+    why:           rtxt(p, "Why It Matters"),
+    strongAgainst: ms(p, "Strong Against"),
+    ineffective:   ms(p, "Ineffective Against"),
+    status:        sel(p, "Finalization Status"),
   }));
 
 // ── Map: hA (towns) ───────────────────────────────────────────
