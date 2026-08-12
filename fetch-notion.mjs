@@ -245,6 +245,10 @@ if (html.includes(EH_OLD)) {
   console.warn("  The baked data still updated; live refresh uses baked data.");
 }
 
+// 6. Update the baked date to today
+const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+html = html.replace(/\byA="[\d-]+"/, `yA="${today}"`);
+
 writeFileSync("index.html", html, "utf8");
 const after = html.length;
 
