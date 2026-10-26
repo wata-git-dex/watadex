@@ -262,3 +262,7 @@
  .catalog-description,.catalog-intro p{font-size:14px!important;line-height:1.6!important}
  .stickyNav__btn{font-family:'IBM Plex Mono',monospace!important;font-size:9px!important;font-weight:600!important}
 }
+
+/* Creature titles keep pixel lettering at a legible display size. */
+.card__name{font-size:13px!important;line-height:1.8!important;color:#172f52!important;font-weight:400!important;letter-spacing:0!important;margin:8px 0 12px!important;overflow-wrap:normal;word-break:normal;hyphens:none}
+@media(max-width:650px){.card__name{font-size:12px!important;line-height:1.8!important;overflow-wrap:anywhere}.card__desc{font-size:14px!important}}
