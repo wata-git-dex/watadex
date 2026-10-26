@@ -229,3 +229,14 @@
 .statTrack{background:#d4e3f6!important;border-color:#8ba4c5!important}
 /* Detail dialogs sit above the navigation, including on short phone screens. */
 .overlay{z-index:1000!important}
+
+/* Category identities remain visible before and after selection. */
+.controls--watamon .typePill:nth-child(1){--category-bg:#e5edf9;--category-ink:#425d85;--category-edge:#8fa7ca}
+.controls--watamon .typePill:nth-child(2),.catalog-row--watamon .catalog-links button:nth-child(1){--category-bg:#ffdfcc;--category-ink:#99451d;--category-edge:#d48b60}
+.controls--watamon .typePill:nth-child(3),.catalog-row--watamon .catalog-links button:nth-child(2){--category-bg:#d2edff;--category-ink:#1f6199;--category-edge:#70a9d1}
+.controls--watamon .typePill:nth-child(4),.catalog-row--watamon .catalog-links button:nth-child(3){--category-bg:#eadcff;--category-ink:#70439f;--category-edge:#af8bd0}
+.controls--watamon .typePill:nth-child(5),.catalog-row--watamon .catalog-links button:nth-child(4){--category-bg:#c7efe9;--category-ink:#216e66;--category-edge:#62aaa1}
+.controls--watamon .typePill,.catalog-row--watamon .catalog-links button{background:var(--category-bg)!important;color:var(--category-ink)!important;border-color:var(--category-edge)!important;box-shadow:0 2px var(--category-edge)!important}
+.controls--watamon .typePill.active{background:var(--category-ink)!important;color:#fff!important;border-color:var(--category-ink)!important;box-shadow:inset 0 2px #ffffff40,0 2px var(--category-edge)!important;outline:2px solid var(--category-ink)!important;outline-offset:2px}
+.controls--watamon .category-count{background:#ffffff80!important;color:var(--category-ink)!important}
+.controls--watamon .typePill.active .category-count{background:#ffffff26!important;color:#fff!important}

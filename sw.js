@@ -1,5 +1,5 @@
-// WATADEX 1.3.0 — static shell only; live data remains network-owned.
-const CACHE = 'watadex-v1.3.0';
+// WATADEX 1.3.1 — static shell only; live data remains network-owned.
+const CACHE = 'watadex-v1.3.1';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './catalog-home.css', './artwork.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
