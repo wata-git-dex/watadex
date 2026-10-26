@@ -124,7 +124,7 @@
 .filterToggle{background:#f7e4a9!important;color:#283f4e!important;border:2px solid #93825a!important;box-shadow:0 2px #88754a}
 .filterPanel{background:#d8e3cb!important;border-color:#9eb193!important}
 .card:focus-visible,.sheet button:focus-visible,.controls button:focus-visible,.controls input:focus-visible{outline:3px solid #edb943!important;outline-offset:3px}
-.stickyNav{bottom:calc(12px + env(safe-area-inset-bottom))!important}
+.stickyNav{bottom:12px!important}
 .catalog-row--towns:before{height:auto;aspect-ratio:3/1;background-size:100% 100%}
 @media(prefers-reduced-motion:reduce){.card,.catalog-open,.catalog-links button,.stickyNav__btn{transition:none!important;animation:none!important}}
 @media(max-width:560px){.sheet__body{padding:16px!important}.sheet__titleBlock{padding-left:16px!important;padding-right:16px!important}.catalog-home{padding-bottom:90px}.controls{padding:10px!important}}
@@ -240,3 +240,25 @@
 .controls--watamon .typePill.active{background:var(--category-ink)!important;color:#fff!important;border-color:var(--category-ink)!important;box-shadow:inset 0 2px #ffffff40,0 2px var(--category-edge)!important;outline:2px solid var(--category-ink)!important;outline-offset:2px}
 .controls--watamon .category-count{background:#ffffff80!important;color:var(--category-ink)!important}
 .controls--watamon .typePill.active .category-count{background:#ffffff26!important;color:#fff!important}
+
+/* Phone dock: safe-area space belongs inside the dock, not below it. */
+@media(max-width:650px){
+ .stickyNav{bottom:0!important;padding:6px 6px max(6px,env(safe-area-inset-bottom,0px))!important;border-radius:10px 10px 0 0!important;border-bottom:0!important;box-shadow:0 -2px 0 #ffffff26!important;box-sizing:border-box!important}
+ .stickyNav__btn{min-height:50px!important;gap:5px!important;padding:6px 2px!important}
+ .wd:not(.wd--cover){padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))!important}
+}
+
+/* Phone readability and an unbroken category row. */
+.catalog-description,.catalog-intro p{font-family:'IBM Plex Sans',sans-serif!important;font-size:15px!important;line-height:1.6!important;font-weight:400!important;letter-spacing:0!important}
+.catalog-row--watamon .catalog-links{display:grid!important;grid-template-columns:1.6fr 1.25fr 1.25fr .8fr;gap:6px!important}
+.catalog-row--watamon .catalog-links button,.controls--watamon .typePill{font-family:'IBM Plex Mono',monospace!important;font-weight:600!important;font-size:11px!important;letter-spacing:0!important;white-space:nowrap!important}
+.controls--watamon .filterPanel{flex-wrap:nowrap!important}
+@media(max-width:650px){
+ .catalog-row--watamon .catalog-links{padding:10px 8px!important;gap:4px!important}
+ .catalog-row--watamon .catalog-links button{font-size:9px!important;padding:8px 2px!important;min-width:0!important;min-height:44px!important}
+ .controls--watamon .filterPanel{display:grid!important;grid-template-columns:.6fr 1.65fr 1.3fr 1.3fr .8fr;gap:4px!important}
+ .controls--watamon .typePill{font-size:9px!important;min-width:0!important;justify-content:center!important;padding:8px 2px!important;min-height:44px!important;gap:0!important}
+ .controls--watamon .category-count{display:none!important}
+ .catalog-description,.catalog-intro p{font-size:14px!important;line-height:1.6!important}
+ .stickyNav__btn{font-family:'IBM Plex Mono',monospace!important;font-size:9px!important;font-weight:600!important}
+}
