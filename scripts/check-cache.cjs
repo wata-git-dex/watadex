@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+(async()=>{const handlers={},deleted=[],saved=[];let cached,fetches=0,assets=[];
+const cache={addAll:async a=>{assets=a},match:async()=>cached,put:async(...a)=>saved.push(a)};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../sw.js'),'utf8'),{URL,self:{registration:{scope:'https://example.com/watadex/'},addEventListener:(k,f)=>handlers[k]=f,skipWaiting(){},clients:{claim:async()=>{}}},caches:{open:async()=>cache,keys:async()=>['watadex-v2','unrelated-app'],delete:async k=>deleted.push(k)},fetch:async()=>{fetches++;return {ok:true,clone(){return this}}}});
+let work;handlers.install({waitUntil:p=>work=p});await work;assert(assets.includes('./artwork.js'));assert(assets.includes('./catalog-home.css'));
+handlers.activate({waitUntil:p=>work=p});await work;assert.deepEqual(deleted,['watadex-v2']);
+let intercepted=false;handlers.fetch({request:{method:'GET',url:'https://live.workers.dev/'},respondWith(){intercepted=true}});assert.equal(intercepted,false);
+cached={cached:true};handlers.fetch({request:{method:'GET',url:'https://example.com/watadex/index.html'},respondWith:p=>work=p});assert.equal((await work).cached,true);assert.equal(fetches,0);
+cached=null;handlers.fetch({request:{method:'GET',url:'https://example.com/watadex/design/a.png'},respondWith:p=>work=p});await work;assert.equal(saved.length,1);assert.equal(fetches,1);console.log('PASS: shell assets, scoped cache cleanup, API bypass, offline cache hit, artwork caching.');
+})().catch(e=>{console.error(e);process.exit(1)});

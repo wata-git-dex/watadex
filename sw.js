@@ -1,48 +1,27 @@
-// WATADEX Service Worker
-// Cache name — bump the version string to force clients to refresh.
-const CACHE = "watadex-v2";
-
-const ASSETS = [
-  "./",
-  "./index.html",
-  "./manifest.webmanifest",
-];
-
-// Install: cache core assets
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(ASSETS))
-  );
+// WATADEX 1.3.0 — static shell only; live data remains network-owned.
+const CACHE = 'watadex-v1.3.0';
+const ASSETS = ['./', './index.html', './manifest.webmanifest', './catalog-home.css', './artwork.js'];
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
   self.skipWaiting();
 });
-
-// Activate: remove old caches
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-    )
-  );
-  self.clients.claim();
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(
+    keys.filter(key => key.startsWith('watadex-') && key !== CACHE).map(key => caches.delete(key))
+  )).then(() => self.clients.claim()));
 });
-
-// Fetch strategy:
-//   • Cloudflare Worker URL → network first (live data), fallback to shell
-//   • Everything else → cache first (offline works)
-self.addEventListener("fetch", event => {
-  if (event.request.url.includes("workers.dev")) {
-    // Live data: network first, fall back to cached shell so UI still loads
-    event.respondWith(
-      fetch(event.request).catch(() =>
-        caches.match("./index.html")
-      )
-    );
-  } else {
-    // Static assets: cache first
-    event.respondWith(
-      caches.match(event.request).then(cached =>
-        cached || fetch(event.request)
-      )
-    );
-  }
+self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+  const scope = new URL(self.registration.scope);
+  if (event.request.method !== 'GET' || url.origin !== scope.origin || !url.pathname.startsWith(scope.pathname)) return;
+  event.respondWith(caches.open(CACHE).then(async cache => {
+    const cached = await cache.match(event.request);
+    if (cached) return cached;
+    const response = await fetch(event.request);
+    // Load large region art on demand, then retain it for offline revisits.
+    if (response.ok && /\.(png|webp|css|js)$/.test(url.pathname)) {
+      await cache.put(event.request, response.clone());
+    }
+    return response;
+  }));
 });

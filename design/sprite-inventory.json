@@ -1,0 +1,730 @@
+[
+  {
+    "kind": "watamon",
+    "key": 1,
+    "name": "Ecolibyte",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 2,
+    "name": "Ecoluster",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 3,
+    "name": "Ecolidemic",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 4,
+    "name": "Cholerix",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 5,
+    "name": "Choleraxis",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 6,
+    "name": "Cholerath",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 8,
+    "name": "Virulo",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 9,
+    "name": "Virulox",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 10,
+    "name": "Virudemic",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 11,
+    "name": "Hepavir",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 12,
+    "name": "Hepatoxis",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 13,
+    "name": "Hepajaundix",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 15,
+    "name": "Giardiok",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 16,
+    "name": "Giarditic",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 17,
+    "name": "Giardigorge",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 18,
+    "name": "Cryptil",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 19,
+    "name": "Cryptozan",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 20,
+    "name": "Cryptigorge",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 22,
+    "name": "Guinealarva",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 23,
+    "name": "Dracunculid",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 24,
+    "name": "Guinemara",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 27,
+    "name": "Dirtclod",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 28,
+    "name": "Silterra",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 29,
+    "name": "Turbidon",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 30,
+    "name": "Muckwig",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 31,
+    "name": "Rotmire",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 32,
+    "name": "Sludgorge",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 33,
+    "name": "Microplast",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 34,
+    "name": "Polydrift",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 36,
+    "name": "Greenbloom",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 37,
+    "name": "Bloomvine",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 38,
+    "name": "Bloomdon",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 39,
+    "name": "Cyanowisp",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 40,
+    "name": "Toxidrift",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 41,
+    "name": "Cyanogorgon",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 42,
+    "name": "Foulfume",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 43,
+    "name": "Sulfurot",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 45,
+    "name": "Leadmite",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 46,
+    "name": "Leadbrawl",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 47,
+    "name": "Arsenix",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 48,
+    "name": "Arsenolith",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 49,
+    "name": "Fluormite",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 50,
+    "name": "Fluoracid",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 51,
+    "name": "Fluorosis",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 53,
+    "name": "Radonix",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 54,
+    "name": "Radolith",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 57,
+    "name": "Slicklet",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 58,
+    "name": "Petrogrime",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 61,
+    "name": "Salinar",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 66,
+    "name": "Settlorin",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 67,
+    "name": "Coaguleaf",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 68,
+    "name": "Claristone",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 70,
+    "name": "Clothrin",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 71,
+    "name": "Biosan",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 72,
+    "name": "Fiberflume",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 73,
+    "name": "Ceramiq",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 74,
+    "name": "Flowguard",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 75,
+    "name": "Cleanweave",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 76,
+    "name": "Aquastrike",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 77,
+    "name": "Ecofiltro",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 79,
+    "name": "Blazebrew",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 80,
+    "name": "Steamfury",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 81,
+    "name": "Pyroclarion",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 83,
+    "name": "Solaray",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 84,
+    "name": "Sunlance",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 85,
+    "name": "Heliopure",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 87,
+    "name": "Chlorinex",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 88,
+    "name": "Chlorotab",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 89,
+    "name": "Electrochlor",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 91,
+    "name": "Carbona",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 92,
+    "name": "Carbocore",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 100,
+    "name": "Agua",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 101,
+    "name": "Quetzumal",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 102,
+    "name": "Wayur\u00e1",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 103,
+    "name": "Song Long",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 104,
+    "name": "Nakharin",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 105,
+    "name": "Raya Thazin",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 106,
+    "name": "Olaserp",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 110,
+    "name": "Rivuron",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 111,
+    "name": "Aquiferon",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 112,
+    "name": "Wellara",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 113,
+    "name": "Nimbaqua",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "watamon",
+    "key": 114,
+    "name": "Torpalis",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Water Test Kit",
+    "name": "Water Test Kit",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Bucket Lid",
+    "name": "Bucket Lid",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "WATA Deck",
+    "name": "WATA Deck",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Handwashing Station",
+    "name": "Handwashing Station",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Household Survey",
+    "name": "Household Survey",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Pour-Safe Spout",
+    "name": "Pour-Safe Spout",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Fuel Supply",
+    "name": "Fuel Supply",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Storage Tap",
+    "name": "Storage Tap",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Ceramic Filter Brush",
+    "name": "Ceramic Filter Brush",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Safe Storage Jar",
+    "name": "Safe Storage Jar",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Solar Disinfection Indicator",
+    "name": "Solar Disinfection Indicator",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Sealed Storage Vault",
+    "name": "Sealed Storage Vault",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Source Fencing",
+    "name": "Source Fencing",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Backflush Syringe",
+    "name": "Backflush Syringe",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "Dosing Syringe",
+    "name": "Dosing Syringe",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Tap System",
+    "name": "Tap System",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Source Cover",
+    "name": "Source Cover",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Closed Storage",
+    "name": "Closed Storage",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Physical Barrier",
+    "name": "Physical Barrier",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Hand Washing",
+    "name": "Hand Washing",
+    "artwork": "",
+    "status": "needs-review"
+  },
+  {
+    "kind": "practices",
+    "key": "Piped Delivery",
+    "name": "Piped Delivery",
+    "artwork": "",
+    "status": "needs-review"
+  }
+]
