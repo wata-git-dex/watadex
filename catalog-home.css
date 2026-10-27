@@ -266,3 +266,27 @@
 /* Creature titles keep pixel lettering at a legible display size. */
 .card__name{font-size:13px!important;line-height:1.8!important;color:#172f52!important;font-weight:400!important;letter-spacing:0!important;margin:8px 0 12px!important;overflow-wrap:normal;word-break:normal;hyphens:none}
 @media(max-width:650px){.card__name{font-size:12px!important;line-height:1.8!important;overflow-wrap:anywhere}.card__desc{font-size:14px!important}}
+
+/* Hardware-inspired utility controls and visible blue panel rims. */
+.wd__frame{border:3px solid #93c7f1!important;box-shadow:0 4px 0 #567fb5,inset 0 0 0 2px #fff!important}
+.wd__corner{border-color:#c4e7ff!important}
+.wd__notch{box-shadow:0 0 0 3px #93c7f1!important}
+.controls{border:3px solid #91bfea!important;box-shadow:0 4px 0 #567fb5,inset 0 1px #fff!important}
+.wd .wd__headerRow .syncBtn,.wd .wd-action-btn{
+ background:linear-gradient(#7187ac,#4d648c)!important;
+ color:#fff!important;opacity:1!important;
+ border:2px solid #3b5078!important;
+ border-top-color:#a9c1e1!important;
+ border-radius:8px!important;
+ box-shadow:0 3px 0 #304466,inset 0 1px 0 #c4d8ef!important;
+ font-family:'IBM Plex Mono',monospace!important;
+ font-size:10px!important;font-weight:600!important;
+ letter-spacing:.02em!important;line-height:1.5!important;
+ padding:5px 12px!important;min-height:30px!important;
+ text-transform:uppercase!important;
+ transition:background .12s,transform .12s,box-shadow .12s!important;
+}
+.wd .wd__headerRow .syncBtn:hover,.wd .wd-action-btn:hover{background:linear-gradient(#839dc1,#5d7da6)!important;color:#fff!important}
+.wd .wd__headerRow .syncBtn:active,.wd .wd-action-btn:active{transform:translateY(2px)!important;box-shadow:0 1px 0 #304466,inset 0 1px #a3bad8!important}
+.wd .wd__headerRow .syncBtn:focus-visible,.wd .wd-action-btn:focus-visible{outline:3px solid #2277b4!important;outline-offset:4px!important}
+@media(max-width:650px){.wd__headerRow{gap:10px!important}.wd .wd__headerRow .syncBtn,.wd .wd-action-btn{font-size:9px!important;padding:5px 10px!important;min-height:30px!important}}
