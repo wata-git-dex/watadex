@@ -373,3 +373,13 @@ html,body{overflow-x:clip!important;overflow-y:visible!important}
 .wd .wd__headerRow .syncNote{order:5!important}
 .card--practice .card__statLine,.card--practice .card__chips{display:none!important}
 .wd-app-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;margin-top:12px;border:2px solid #85b9dd;border-radius:5px;background:#e3f3ff;color:#173c62;font:600 12px 'IBM Plex Mono',monospace;text-decoration:none}
+
+/* Primary action buttons follow the console palette; selection stays distinct. */
+:root{--wd-nav-idle:#2e466c;--wd-nav-text:#d8e8fb;--wd-nav-active:#a6ddf2;--wd-nav-active-text:#183b58;--wd-nav-active-edge:#4286a5}
+:root[data-wd-palette="red"]{--wd-nav-idle:#8e2c39;--wd-nav-text:#fff0f0;--wd-nav-active:#fff6f4;--wd-nav-active-text:#8d2232;--wd-nav-active-edge:#e599a1}
+:root[data-wd-palette="pink"]{--wd-nav-idle:#76345f;--wd-nav-text:#fff0fa;--wd-nav-active:#ffe2f2;--wd-nav-active-text:#71294f;--wd-nav-active-edge:#dc91bd}
+.wd .stickyNav__btn{background:var(--wd-nav-idle)!important;color:var(--wd-nav-text)!important;border:1px solid transparent!important;box-shadow:inset 0 1px #ffffff30,0 2px var(--wd-shadow)!important}
+.wd .stickyNav__btn svg{color:inherit!important}
+.wd .stickyNav__btn.active{background:var(--wd-nav-active)!important;color:var(--wd-nav-active-text)!important;border-color:#ffffffb3!important;box-shadow:inset 0 2px #ffffff90,0 3px var(--wd-nav-active-edge)!important}
+.wd .stickyNav__btn.active svg{color:var(--wd-nav-active-text)!important}
+.wd .stickyNav__btn:focus-visible{outline:3px solid var(--wd-nav-active);outline-offset:3px}
