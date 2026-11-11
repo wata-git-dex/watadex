@@ -513,7 +513,7 @@
   {
     "kind": "watamon",
     "key": 102,
-    "name": "Wayur\u00e1",
+    "name": "Wayurá",
     "artwork": "",
     "status": "needs-review"
   },
@@ -726,5 +726,82 @@
     "name": "Piped Delivery",
     "artwork": "",
     "status": "needs-review"
+  },
+  {
+    "kind": "items",
+    "key": "WATA Surveyor",
+    "name": "WATA Surveyor",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "items",
+    "key": "WATA Training Hub",
+    "name": "WATA Training Hub",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "items",
+    "key": "WATA Field",
+    "name": "WATA Field",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Check Before Use",
+    "name": "Check Before Use",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Protect the Clean Outlet",
+    "name": "Protect the Clean Outlet",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Listen During Follow-up",
+    "name": "Listen During Follow-up",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Clean the Storage Container",
+    "name": "Clean the Storage Container",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Collect a Valid Water Sample",
+    "name": "Collect a Valid Water Sample",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Respectful Surveying",
+    "name": "Respectful Surveying",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Backflush a Compatible Filter",
+    "name": "Backflush a Compatible Filter",
+    "status": "needs-review",
+    "artwork": ""
+  },
+  {
+    "kind": "practices",
+    "key": "Pause and Seek Help",
+    "name": "Pause and Seek Help",
+    "status": "needs-review",
+    "artwork": ""
   }
 ]
