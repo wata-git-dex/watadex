@@ -383,3 +383,29 @@ html,body{overflow-x:clip!important;overflow-y:visible!important}
 .wd .stickyNav__btn.active{background:var(--wd-nav-active)!important;color:var(--wd-nav-active-text)!important;border-color:#ffffffb3!important;box-shadow:inset 0 2px #ffffff90,0 3px var(--wd-nav-active-edge)!important}
 .wd .stickyNav__btn.active svg{color:var(--wd-nav-active-text)!important}
 .wd .stickyNav__btn:focus-visible{outline:3px solid var(--wd-nav-active);outline-offset:3px}
+
+/* Clearer console controls, matching Appearance row, and artwork-ready lists. */
+.wd .stickyNav{gap:7px!important;padding:7px!important;box-shadow:0 -2px 0 #ffffff75,0 4px 0 var(--wd-shadow)!important}
+.wd .stickyNav__btn{border:2px solid #ffffff75!important;box-shadow:inset 0 2px #ffffff40,0 3px 0 #0007!important}
+.wd .stickyNav__btn.active{border:2px solid #fff!important;box-shadow:inset 0 2px #fff,0 3px 0 var(--wd-nav-active-edge),0 0 0 1px var(--wd-nav-active)!important}
+.wd-appearance{border-top:0;margin-top:0;padding-top:0}
+.wd-appearance summary{box-sizing:border-box;min-height:48px;padding:12px 14px;border:1px solid #aec5df;border-radius:4px;background:#fff;box-shadow:0 2px 0 #b5cae2;color:#213f62;font:600 12px 'IBM Plex Mono',monospace}
+.wd-appearance summary:hover{background:#dcefff;border-color:#4a9cce}
+.wd-appearance summary>span{font-size:18px;color:#5d7ea5}
+.wd-palettes{padding-top:12px}
+.grid>.card:not(.card--region) .card__meta>svg,.grid>.card:not(.card--region) .card__typeImg{display:block!important;position:absolute;top:14px;right:14px;width:25px;height:25px;padding:5px;box-sizing:content-box;background:#fff;border:1px solid #b6c9de;border-radius:5px;box-shadow:0 2px 0 #b6c9de}
+.grid>.card:not(.card--region) .card__name{padding-right:43px}
+.grid:has(.card--region){display:flex!important;flex-direction:column;max-width:960px;gap:14px!important}
+.grid>.card--region{display:grid!important;grid-template-columns:130px minmax(0,1fr);column-gap:18px;align-items:start;padding:18px!important;min-height:150px}
+.card--region>.region-preview{display:none}
+.card--region .card__head{grid-column:1;grid-row:1 / span 6;display:flex;flex-direction:column;gap:9px;align-items:center!important;margin:0!important}
+.card--region .card__sprite{display:flex!important;width:124px!important;height:104px!important;border-radius:5px!important}
+.card--region .card__spriteImg{object-fit:cover!important}
+.card--region .card__meta{align-items:center}
+.card--region .card__meta>svg{display:none}
+.card--region>:not(.card__head):not(.region-preview){grid-column:2}
+.card--region .card__name{font-size:13px!important;line-height:1.8!important;margin:0 0 9px!important}
+.card--region .card__type{margin-bottom:10px!important}
+.card--region .card__chips{display:none!important}
+@media(max-width:650px){.grid>.card--region{grid-template-columns:86px minmax(0,1fr);gap:0 14px;padding:16px 14px!important;min-height:130px}.card--region .card__sprite{width:80px!important;height:80px!important}.card--region .card__dex{font-size:9px!important}.wd .stickyNav{gap:5px!important;padding-bottom:max(7px,env(safe-area-inset-bottom,0px))!important}}
+@media(max-width:650px){.controlsBar:has(.viewToggle){display:grid!important;grid-template-columns:1fr auto;gap:10px!important}.controlsBar:has(.viewToggle) .searchWrap{grid-column:1 / -1;grid-row:1;width:100%!important}.controlsBar:has(.viewToggle) .filterToggle{grid-column:1;grid-row:2;justify-self:start}.controlsBar:has(.viewToggle) .viewToggle{grid-column:2;grid-row:2}}
