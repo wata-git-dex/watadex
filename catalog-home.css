@@ -290,3 +290,62 @@
 .wd .wd__headerRow .syncBtn:active,.wd .wd-action-btn:active{transform:translateY(2px)!important;box-shadow:0 1px 0 #304466,inset 0 1px #a3bad8!important}
 .wd .wd__headerRow .syncBtn:focus-visible,.wd .wd-action-btn:focus-visible{outline:3px solid #2277b4!important;outline-offset:4px!important}
 @media(max-width:650px){.wd__headerRow{gap:10px!important}.wd .wd__headerRow .syncBtn,.wd .wd-action-btn{font-size:9px!important;padding:5px 10px!important;min-height:30px!important}}
+
+/* Compact identity header, opaque backing, and browsable collection rows. */
+.wd:not(.wd--cover){overflow:visible!important;padding-top:0!important}
+.wd .wd__frame{position:sticky!important;top:0;z-index:120;display:flex;align-items:center;gap:14px;padding:calc(12px + env(safe-area-inset-top,0px)) 14px 12px!important;margin-bottom:20px!important;background:#f5faff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-radius:0 0 10px 10px!important;isolation:isolate}
+.wd .wd__notch{position:static!important;transform:none!important;flex:0 0 38px;width:38px;height:38px}
+.wd .wd__titlebar{flex:1;justify-content:flex-start;min-width:0}
+.wd .wd__title{font-size:clamp(17px,3vw,28px)!important;letter-spacing:0!important}
+.wd .wd__corner{display:none!important}
+.wd-menu-trigger,.wd-menu-close{width:44px;height:44px;flex-shrink:0;border:2px solid #8baad1;border-radius:8px;background:#344d78;color:white;box-shadow:inset 0 2px #7895be,0 3px #213452;cursor:pointer;font-size:22px}
+.wd-menu-trigger:focus-visible,.wd-menu-close:focus-visible{outline:3px solid #20a7df;outline-offset:3px}
+.wd .wd__headerRow{display:none!important}
+.wd.wd-menu-open .wd__headerRow{display:flex!important;position:fixed!important;inset:0 0 0 auto!important;width:min(340px,88vw);height:100dvh;box-sizing:border-box;padding:calc(20px + env(safe-area-inset-top,0px)) 20px 24px!important;flex-direction:column!important;flex-wrap:nowrap!important;justify-content:flex-start!important;align-items:stretch!important;gap:16px!important;background:#f5faff!important;border:0!important;border-left:3px solid #93c7f1!important;z-index:302;overflow-y:auto}
+.wd-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Press Start 2P',monospace;font-size:13px;color:#193653;order:-1;margin-bottom:14px}
+.wd .wd__headerRow .syncBtn,.wd .wd__headerRow .wd-action-btn{min-height:44px!important;justify-content:center!important;font-size:11px!important;width:100%;box-sizing:border-box}
+.wd .wd__headerRow .syncNote{flex:none!important;line-height:1.7;margin-top:8px!important}
+.wd-menu-scrim{position:fixed;inset:0;background:#10243bb3;border:0;z-index:301;cursor:pointer}
+.wd-menu-scrim[hidden]{display:none}
+.catalog-row .catalog-links,.catalog-row--watamon .catalog-links{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;gap:6px!important;padding:10px!important;scroll-padding:10px;overscroll-behavior-x:contain;scrollbar-width:thin}
+.catalog-row .catalog-links button{flex:1 0 auto;min-width:max-content;white-space:nowrap;font-family:'IBM Plex Mono',monospace!important;font-size:11px!important;font-weight:600!important;letter-spacing:0!important;padding:8px!important;min-height:40px!important}
+.grid:not(:has(.card--region)){display:flex!important;flex-direction:column;max-width:960px;gap:12px!important}
+.grid>.card:not(.card--region){display:grid!important;grid-template-columns:86px minmax(0,1fr);column-gap:18px;padding:16px!important;align-items:start;min-height:130px}
+.grid>.card:not(.card--region) .card__head{grid-column:1;grid-row:1 / span 6;display:flex;flex-direction:column;align-items:center!important;gap:10px;margin:0!important}
+.grid>.card:not(.card--region) .card__sprite{width:72px!important;height:72px!important}
+.grid>.card:not(.card--region) .card__meta{align-items:center}
+.grid>.card:not(.card--region) .card__meta>svg,.grid>.card:not(.card--region) .card__typeImg{display:none}
+.grid>.card:not(.card--region)>:not(.card__head){grid-column:2}
+.grid>.card:not(.card--region) .card__name{margin:0 0 8px!important;font-size:13px!important;line-height:1.7!important;overflow-wrap:anywhere}
+.grid>.card:not(.card--region) .card__desc{margin:6px 0!important;font-size:14px!important;-webkit-line-clamp:2}
+.grid>.card:not(.card--region) .card__washSnip,.grid>.card:not(.card--region) .card__chips{display:none!important}
+.grid>.card:not(.card--region) .card__type{margin-bottom:4px!important}
+.grid>.card:not(.card--region) .card__statLine{margin:4px 0!important}
+@media(max-width:650px){.wd .wd__frame{gap:10px}.grid>.card:not(.card--region){grid-template-columns:64px minmax(0,1fr);gap:0 12px;padding:14px 12px!important}.grid>.card:not(.card--region) .card__sprite{width:58px!important;height:58px!important}.catalog-row .catalog-links button{font-size:10px!important;padding:8px 7px!important}}
+
+/* Clip horizontal spill without creating a second scrolling ancestor. */
+html,body{overflow-x:clip!important;overflow-y:visible!important}
+
+.wd.wd-menu-open .wd__headerRow{margin:0!important}
+/* Pin the identity independently of the long collection scroller. */
+.wd:not(.wd--cover){padding-top:calc(94px + env(safe-area-inset-top,0px))!important}
+.wd .wd__frame{position:fixed!important;left:12px;right:12px;top:0;width:auto;box-sizing:border-box;margin:0 auto!important}
+
+/* Console quick menu: anchored to the identity bar, with room for more actions. */
+.wd .wd__frame{gap:12px!important;padding:calc(12px + env(safe-area-inset-top,0px)) 14px 12px!important}
+.wd .wd__title{font-size:clamp(21px,5.8vw,32px)!important;white-space:nowrap}
+.wd-menu-trigger{width:68px;height:38px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.04em;display:flex;align-items:center;justify-content:center;gap:5px;border-radius:5px}
+.wd-menu-trigger[aria-expanded="true"]{background:#173b62;box-shadow:inset 0 2px 4px #102844;color:#a7e6ff}
+.wd-menu-trigger[aria-expanded="true"] .wd-menu-arrow{transform:rotate(180deg)}
+.wd.wd-menu-open .wd__headerRow{position:absolute!important;inset:calc(100% + 10px) 0 auto auto!important;width:min(360px,100%);height:auto;max-height:calc(100dvh - 120px);padding:14px!important;gap:8px!important;border:3px solid #91bfea!important;border-radius:8px!important;background:#eef5ff!important;box-shadow:0 5px 0 #1e345b,0 12px 24px #10243b45,inset 0 0 0 2px white!important}
+.wd-menu-heading{font-size:10px;letter-spacing:.04em;margin:0 0 6px;padding-bottom:10px;border-bottom:1px dashed #9eb9d9;color:#3b587b}
+.wd-menu-close{width:30px;height:30px;font-size:20px;border-radius:4px;box-shadow:0 2px #213452}
+.wd .wd__headerRow .syncBtn,.wd .wd__headerRow .wd-action-btn{min-height:48px!important;justify-content:flex-start!important;padding:12px 14px!important;text-transform:none!important;font-size:12px!important;color:#213f62!important;background:#fff!important;border:1px solid #aec5df!important;border-radius:4px!important;box-shadow:0 2px 0 #b5cae2!important;letter-spacing:0!important;gap:9px!important}
+.wd .wd__headerRow .syncBtn::after,.wd .wd__headerRow .wd-action-btn::after{content:'›';margin-left:auto;font-size:20px;color:#5d7ea5;line-height:1}
+.wd .wd__headerRow .syncBtn:hover,.wd .wd__headerRow .wd-action-btn:hover{background:#dcefff!important;border-color:#4a9cce!important}
+.wd .wd__headerRow .syncNote{font-size:10px!important;color:#536f90!important;padding:8px 0 0;line-height:1.6!important}
+.grid:not(:has(.card--region)){gap:14px!important}
+.grid>.card:not(.card--region){padding:18px!important;column-gap:18px}
+.grid>.card:not(.card--region) .card__name{margin-bottom:9px!important}
+@media(max-width:380px){.wd .wd__frame{gap:8px!important;padding-left:10px!important;padding-right:10px!important}.wd .wd__title{font-size:20px!important}.wd .wd__notch{flex-basis:32px;width:32px;height:32px}.wd-menu-trigger{width:58px;font-size:10px}}
+@media(max-width:650px){.grid>.card:not(.card--region){padding:16px 14px!important;column-gap:14px}}

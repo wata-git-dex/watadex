@@ -5,7 +5,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,"/>
   <title>WATAdex</title>
-  <meta name="application-version" content="1.3.3">
+  <meta name="application-version" content="1.4.0">
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <meta name="apple-mobile-web-app-title" content="WATAdex"/>
@@ -478,7 +478,51 @@
       '<button class="wd-action-btn" id="wd-btn-about">📖 About WATADEX</button>' +
       '<a href="https://cleanwata.org" target="_blank" class="wd-action-btn">💧 cleanwata.org</a>';
     syncBox.parentNode.insertBefore(bar, syncBox.nextSibling);
+    var frame = syncBox.closest('.wd__frame');
+    var app = frame.closest('.wd');
+    var panel = syncBox.parentNode;
+    panel.id = 'wd-utility-menu';
+    panel.setAttribute('role', 'dialog');
+    panel.setAttribute('aria-label', 'WATADEX menu');
+    panel.setAttribute('aria-modal', 'false');
+    var trigger = document.createElement('button');
+    trigger.className = 'wd-menu-trigger';
+    trigger.setAttribute('aria-label', 'Open WATADEX menu');
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.setAttribute('aria-controls', panel.id);
+    trigger.innerHTML = '<span>MENU</span><span class="wd-menu-arrow" aria-hidden="true">▾</span>';
+    frame.appendChild(trigger);
+    var heading = document.createElement('div');
+    heading.className = 'wd-menu-heading';
+    heading.innerHTML = '<span>QUICK MENU</span><button class="wd-menu-close" aria-label="Close menu">×</button>';
+    panel.prepend(heading);
+    panel.insertBefore(bar, syncBox);
+    function closeMenu(returnFocus) {
+      app.classList.remove('wd-menu-open');
+      trigger.setAttribute('aria-expanded', 'false');
+      if (returnFocus !== false) trigger.focus();
+    }
+    trigger.addEventListener('click', function() {
+      if (app.classList.contains('wd-menu-open')) { closeMenu(); return; }
+      app.classList.add('wd-menu-open');
+      trigger.setAttribute('aria-expanded', 'true');
+      heading.querySelector('button').focus();
+    });
+    heading.querySelector('button').addEventListener('click', closeMenu);
+    document.addEventListener('pointerdown', function(event) {
+      if (app.classList.contains('wd-menu-open') && !panel.contains(event.target) && !trigger.contains(event.target)) closeMenu(false);
+    });
+    document.addEventListener('keydown', function(event) {
+      if(event.key === 'Escape' && app.classList.contains('wd-menu-open')) { event.preventDefault(); closeMenu(); }
+    });
+    frame.addEventListener('focusout', function() {
+      requestAnimationFrame(function() {
+        if(app.classList.contains('wd-menu-open') && !frame.contains(document.activeElement)) closeMenu(false);
+      });
+    });
+
     document.getElementById('wd-btn-about').addEventListener('click', function() {
+      closeMenu();
       window.__wdOpenAbout();
     });
   }
