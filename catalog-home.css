@@ -409,3 +409,18 @@ html,body{overflow-x:clip!important;overflow-y:visible!important}
 .card--region .card__chips{display:none!important}
 @media(max-width:650px){.grid>.card--region{grid-template-columns:86px minmax(0,1fr);gap:0 14px;padding:16px 14px!important;min-height:130px}.card--region .card__sprite{width:80px!important;height:80px!important}.card--region .card__dex{font-size:9px!important}.wd .stickyNav{gap:5px!important;padding-bottom:max(7px,env(safe-area-inset-bottom,0px))!important}}
 @media(max-width:650px){.controlsBar:has(.viewToggle){display:grid!important;grid-template-columns:1fr auto;gap:10px!important}.controlsBar:has(.viewToggle) .searchWrap{grid-column:1 / -1;grid-row:1;width:100%!important}.controlsBar:has(.viewToggle) .filterToggle{grid-column:1;grid-row:2;justify-self:start}.controlsBar:has(.viewToggle) .viewToggle{grid-column:2;grid-row:2}}
+
+/* Device framing: safe areas separate the console from system chrome. */
+html,body{background:var(--wd-canvas)!important}
+.wd:not(.wd--cover)::before{background:var(--wd-canvas)!important;pointer-events:none}
+.wd .wd__frame{top:calc(env(safe-area-inset-top,0px) + 12px)!important;padding:12px 14px!important;border-radius:10px!important;filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.wd:not(.wd--cover){padding-top:calc(106px + env(safe-area-inset-top,0px))!important}
+.wd .stickyNav{bottom:max(10px,env(safe-area-inset-bottom,0px))!important;padding:7px!important;border:3px solid var(--wd-rim)!important;border-radius:12px!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;height:auto!important}
+.wd:not(.wd--cover){padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))!important}
+/* Wider touch layouts use a console side rail, leaving the screen unobstructed. */
+@media(min-width:768px) and (max-width:1366px){
+ .wd:not(.wd--cover){padding-left:116px!important;padding-bottom:32px!important}
+ .wd .wd__frame{left:116px!important;right:20px!important}
+ .wd .stickyNav{left:14px!important;right:auto!important;top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;flex-direction:column!important;width:88px!important;max-width:88px!important;gap:10px!important}
+ .wd .stickyNav__btn{width:68px!important;min-height:62px!important;flex:none!important}
+}
