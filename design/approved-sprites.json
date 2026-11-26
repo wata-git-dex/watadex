@@ -1,0 +1,57 @@
+[
+  {
+    "dex": 100,
+    "name": "agua",
+    "file": "assets/sprites/agua-approved-v001.png",
+    "source_candidate": "L02.png",
+    "status": "approved-design-integrated",
+    "sha256": "abfbebcc211c1e2827769dbc9f47cfbf93054100884657f53382ffcc9e4fa9d9"
+  },
+  {
+    "dex": 102,
+    "name": "wayura",
+    "file": "assets/sprites/wayura-approved-v001.png",
+    "source_candidate": "L25-pixel-v001.png",
+    "status": "approved-design-integrated",
+    "sha256": "6957d9f1a7812992bb480a7800b4554fdb9aaa9e23b07da16afe688edbfe7c89"
+  },
+  {
+    "dex": 103,
+    "name": "song-long",
+    "file": "assets/sprites/song-long-approved-v001.png",
+    "source_candidate": "L24-pixel-v001.png",
+    "status": "approved-design-integrated",
+    "sha256": "cdf14e03e1ddf3d781eaaa67b39661ebd9857146dde10ce865628fcddf56ee65"
+  },
+  {
+    "dex": 105,
+    "name": "raya-thazin",
+    "file": "assets/sprites/raya-thazin-approved-v001.png",
+    "source_candidate": "L22-pixel-v001.png",
+    "status": "approved-design-integrated",
+    "sha256": "c84d115c8340268088a560eb5aba2cb137d2f93c556a34e58b9e720a9a4d7ebe"
+  },
+  {
+    "dex": 101,
+    "name": "quetzumal",
+    "file": "assets/sprites/quetzumal-approved-v001.png",
+    "source_candidate": "exec-a8646e71-fd43-4553-bd13-c666b0047721.png",
+    "status": "approved-design-integrated",
+    "sha256": "dec33f5ef90aab6f78a0dae8b6553d1b2a267593cf70686a36a7ccecc548f8dc"
+  },
+  {
+    "dex": 106,
+    "name": "olaserp",
+    "file": "assets/sprites/olaserp-approved-v001.png",
+    "source_candidate": "exec-a4b55275-831e-4174-a60e-2d264e085b14.png",
+    "status": "approved-design-integrated",
+    "sha256": "c7d377c6448ece1009e47dea7fde4f66a3df886d7e813b1ecb440712e1edbab8"
+  },
+  {
+    "dex": 104,
+    "name": "nakharin",
+    "file": "assets/sprites/nakharin-release-v002.png",
+    "status": "release-authorized-refinement",
+    "sha256": "119ae717a2218cd6ca0488d8099b7d0cfaf0ad1df23c3b6bf0009e3efd0232fe"
+  }
+]

@@ -500,29 +500,29 @@
     "kind": "watamon",
     "key": 100,
     "name": "Agua",
-    "artwork": "",
-    "status": "needs-review"
+    "artwork": "assets/sprites/agua-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
     "key": 101,
     "name": "Quetzumal",
-    "artwork": "",
-    "status": "needs-review"
+    "artwork": "assets/sprites/quetzumal-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
     "key": 102,
-    "name": "Wayurá",
-    "artwork": "",
-    "status": "needs-review"
+    "name": "Wayur\u00e1",
+    "artwork": "assets/sprites/wayura-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
     "key": 103,
     "name": "Song Long",
-    "artwork": "",
-    "status": "needs-review"
+    "artwork": "assets/sprites/song-long-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
@@ -535,15 +535,15 @@
     "kind": "watamon",
     "key": 105,
     "name": "Raya Thazin",
-    "artwork": "",
-    "status": "needs-review"
+    "artwork": "assets/sprites/raya-thazin-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
     "key": 106,
     "name": "Olaserp",
-    "artwork": "",
-    "status": "needs-review"
+    "artwork": "assets/sprites/olaserp-approved-v001.png",
+    "status": "approved-design-integrated"
   },
   {
     "kind": "watamon",
